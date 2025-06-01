@@ -1,0 +1,176 @@
+2025-06-01 13:48:37,293 - INFO - Connected to MongoDB
+2025-06-01 13:48:37,356 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-01 13:48:37,357 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-01 13:48:37,389 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:48:43,924 - INFO - Connected to MongoDB
+2025-06-01 13:48:43,946 - WARNING -  * Debugger is active!
+2025-06-01 13:48:43,961 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:49:12,594 - ERROR - Error processing upload: Could not build url for endpoint 'training_status' with values ['job_id']. Did you mean 'get_training_status' instead?
+2025-06-01 13:49:12,607 - INFO - 127.0.0.1 - - [01/Jun/2025 13:49:12] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-01 13:49:12,621 - INFO - Found 0 models in the filesystem
+2025-06-01 13:49:12,657 - INFO - 127.0.0.1 - - [01/Jun/2025 13:49:12] "GET / HTTP/1.1" 200 -
+2025-06-01 13:49:12,942 - INFO - 127.0.0.1 - - [01/Jun/2025 13:49:12] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 13:49:12,956 - INFO - Loading data from: uploads\7807647a-783f-4005-9bed-0968cd54e29f.csv
+2025-06-01 13:49:13,159 - INFO - Data loaded successfully: 36275 rows, 19 columns
+2025-06-01 13:49:13,160 - INFO - Starting data preprocessing...
+2025-06-01 13:49:13,175 - INFO - Found 4 categorical and 14 numeric columns
+2025-06-01 13:49:13,176 - INFO - Encoding categorical variables...
+2025-06-01 13:49:13,389 - INFO - Scaling features using standard...
+2025-06-01 13:49:13,436 - INFO - Training random_forest...
+2025-06-01 13:49:13,436 - INFO - Performing hyperparameter tuning for random_forest...
+2025-06-01 13:49:13,706 - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\heapq.py', reloading
+2025-06-01 13:49:13,742 - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py', reloading
+2025-06-01 13:49:13,812 - INFO - 127.0.0.1 - - [01/Jun/2025 13:49:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 13:49:13,849 - INFO - Found 0 models in the filesystem
+2025-06-01 13:49:13,851 - INFO - 127.0.0.1 - - [01/Jun/2025 13:49:13] "GET / HTTP/1.1" 200 -
+2025-06-01 13:49:14,731 - ERROR - Failed to train random_forest: can't register atexit after shutdown
+2025-06-01 13:49:14,736 - INFO - Training gradient_boosting...
+2025-06-01 13:49:14,741 - INFO - Performing hyperparameter tuning for gradient_boosting...
+2025-06-01 13:49:16,235 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:49:22,144 - INFO - Connected to MongoDB
+2025-06-01 13:49:22,166 - WARNING -  * Debugger is active!
+2025-06-01 13:49:22,189 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:53:20,641 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 13:53:20,643 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 13:53:22,781 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:53:29,798 - INFO - Connected to MongoDB
+2025-06-01 13:53:29,817 - WARNING -  * Debugger is active!
+2025-06-01 13:53:29,832 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:55:57,559 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\config.py', reloading
+2025-06-01 13:55:57,569 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\config.py', reloading
+2025-06-01 13:55:59,136 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:56:05,346 - INFO - Connected to MongoDB
+2025-06-01 13:56:05,366 - WARNING -  * Debugger is active!
+2025-06-01 13:56:05,380 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:56:10,065 - INFO - Found 0 models in the filesystem
+2025-06-01 13:56:10,140 - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2025-06-01 13:56:10,149 - INFO - 127.0.0.1 - - [01/Jun/2025 13:56:10] "GET / HTTP/1.1" 200 -
+2025-06-01 13:56:10,368 - INFO - 127.0.0.1 - - [01/Jun/2025 13:56:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 13:56:11,134 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:56:21,053 - INFO - Connected to MongoDB
+2025-06-01 13:56:21,123 - WARNING -  * Debugger is active!
+2025-06-01 13:56:21,191 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:56:22,041 - INFO - 127.0.0.1 - - [01/Jun/2025 13:56:22] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 13:56:22,060 - INFO - Found 0 models in the filesystem
+2025-06-01 13:56:22,129 - INFO - 127.0.0.1 - - [01/Jun/2025 13:56:22] "GET / HTTP/1.1" 200 -
+2025-06-01 13:56:27,401 - INFO -  * Detected change in 'C:\\Users\\HP\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\config\\__init__.py', reloading
+2025-06-01 13:56:29,331 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:56:39,417 - INFO - Connected to MongoDB
+2025-06-01 13:56:39,478 - WARNING -  * Debugger is active!
+2025-06-01 13:56:39,561 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:58:20,975 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\config.py', reloading
+2025-06-01 13:58:20,983 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\config.py', reloading
+2025-06-01 13:58:20,984 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\config.py', reloading
+2025-06-01 13:58:22,098 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:58:28,531 - INFO - Connected to MongoDB
+2025-06-01 13:58:28,550 - WARNING -  * Debugger is active!
+2025-06-01 13:58:28,565 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:58:49,670 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 13:58:49,671 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 13:58:49,671 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 13:58:51,816 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:58:59,200 - INFO - Connected to MongoDB
+2025-06-01 13:58:59,226 - WARNING -  * Debugger is active!
+2025-06-01 13:58:59,244 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:59:10,538 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\utils\\db.py', reloading
+2025-06-01 13:59:10,539 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\utils\\db.py', reloading
+2025-06-01 13:59:12,418 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 13:59:19,648 - INFO - Connected to MongoDB
+2025-06-01 13:59:19,698 - WARNING -  * Debugger is active!
+2025-06-01 13:59:19,755 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 13:59:20,487 - INFO - 127.0.0.1 - - [01/Jun/2025 13:59:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 13:59:21,264 - INFO - 127.0.0.1 - - [01/Jun/2025 13:59:21] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-06-01 13:59:21,274 - INFO - 127.0.0.1 - - [01/Jun/2025 13:59:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-06-01 13:59:21,358 - INFO - 127.0.0.1 - - [01/Jun/2025 13:59:21] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-06-01 13:59:21,360 - INFO - 127.0.0.1 - - [01/Jun/2025 13:59:21] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=U70QwOw1mdZa6WT0AVNQ HTTP/1.1" 200 -
+2025-06-01 13:59:21,400 - INFO - 127.0.0.1 - - [01/Jun/2025 13:59:21] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 14:00:12,313 - INFO - 127.0.0.1 - - [01/Jun/2025 14:00:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 14:00:12,364 - INFO - 127.0.0.1 - - [01/Jun/2025 14:00:12] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 14:00:12,370 - INFO - 127.0.0.1 - - [01/Jun/2025 14:00:12] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 14:00:12,537 - INFO - 127.0.0.1 - - [01/Jun/2025 14:00:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=U70QwOw1mdZa6WT0AVNQ HTTP/1.1[0m" 304 -
+2025-06-01 14:00:12,540 - INFO - 127.0.0.1 - - [01/Jun/2025 14:00:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 14:00:12,581 - INFO - 127.0.0.1 - - [01/Jun/2025 14:00:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 14:01:10,233 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:01:10,235 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:01:11,402 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 14:01:18,367 - INFO - Connected to MongoDB
+2025-06-01 14:01:18,392 - WARNING -  * Debugger is active!
+2025-06-01 14:01:18,408 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 14:01:39,047 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:01:39,055 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:01:40,499 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 14:01:47,054 - INFO - Connected to MongoDB
+2025-06-01 14:01:47,080 - WARNING -  * Debugger is active!
+2025-06-01 14:01:47,094 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 14:01:50,956 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\utils\\db.py', reloading
+2025-06-01 14:01:50,963 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\utils\\db.py', reloading
+2025-06-01 14:01:50,964 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\utils\\db.py', reloading
+2025-06-01 14:01:52,935 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 14:01:59,002 - INFO - Connected to MongoDB
+2025-06-01 14:01:59,043 - WARNING -  * Debugger is active!
+2025-06-01 14:01:59,063 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 14:01:59,910 - INFO - 127.0.0.1 - - [01/Jun/2025 14:01:59] "GET / HTTP/1.1" 200 -
+2025-06-01 14:02:00,261 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 14:02:00,498 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:00] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 14:02:00,516 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:00] "GET / HTTP/1.1" 200 -
+2025-06-01 14:02:38,003 - ERROR - Error processing upload: 'function' object does not support item assignment
+2025-06-01 14:02:38,018 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:38] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-01 14:02:38,029 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:38] "GET / HTTP/1.1" 200 -
+2025-06-01 14:02:38,076 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 14:02:38,599 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:38] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 14:02:38,612 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:38] "GET / HTTP/1.1" 200 -
+2025-06-01 14:02:47,333 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:47] "[32mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 302 -
+2025-06-01 14:02:47,353 - INFO - 127.0.0.1 - - [01/Jun/2025 14:02:47] "GET / HTTP/1.1" 200 -
+2025-06-01 14:04:48,657 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:04:48,666 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:04:50,194 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 14:04:57,416 - INFO - Connected to MongoDB
+2025-06-01 14:04:57,435 - WARNING -  * Debugger is active!
+2025-06-01 14:04:57,448 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 14:05:06,757 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:05:06,759 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:05:06,760 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:05:08,080 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 14:05:15,201 - INFO - Connected to MongoDB
+2025-06-01 14:05:15,232 - WARNING -  * Debugger is active!
+2025-06-01 14:05:15,256 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 14:05:26,449 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:05:26,457 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:05:26,458 - INFO -  * Detected change in 'D:\\Projects\\MAJOR PROJECT --IMP\\model_generator\\app.py', reloading
+2025-06-01 14:05:28,335 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-01 14:05:37,106 - INFO - Connected to MongoDB
+2025-06-01 14:05:37,173 - WARNING -  * Debugger is active!
+2025-06-01 14:05:37,225 - INFO -  * Debugger PIN: 534-855-942
+2025-06-01 14:05:37,950 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:37] "GET / HTTP/1.1" 200 -
+2025-06-01 14:05:38,075 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:38] "[32mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 302 -
+2025-06-01 14:05:38,093 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:38] "GET / HTTP/1.1" 200 -
+2025-06-01 14:05:38,541 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 14:05:39,174 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:39] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 14:05:39,194 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:39] "GET / HTTP/1.1" 200 -
+2025-06-01 14:05:43,678 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:43] "GET / HTTP/1.1" 200 -
+2025-06-01 14:05:43,717 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:43] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 14:05:44,408 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:44] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 14:05:44,513 - INFO - 127.0.0.1 - - [01/Jun/2025 14:05:44] "GET / HTTP/1.1" 200 -
+2025-06-01 14:06:02,033 - ERROR - Error processing upload: Could not build url for endpoint 'training_status' with values ['job_id']. Did you mean 'get_training_status' instead?
+2025-06-01 14:06:02,048 - INFO - 127.0.0.1 - - [01/Jun/2025 14:06:02] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-01 14:06:02,130 - INFO - Loading data from: uploads\6d1ff8c5-1132-4725-9101-408438290f64.csv
+2025-06-01 14:06:02,177 - INFO - 127.0.0.1 - - [01/Jun/2025 14:06:02] "GET / HTTP/1.1" 200 -
+2025-06-01 14:06:02,226 - INFO - 127.0.0.1 - - [01/Jun/2025 14:06:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-06-01 14:06:02,315 - INFO - Data loaded successfully: 36275 rows, 19 columns
+2025-06-01 14:06:02,315 - INFO - Starting data preprocessing...
+2025-06-01 14:06:02,328 - INFO - Found 4 categorical and 14 numeric columns
+2025-06-01 14:06:02,328 - INFO - Encoding categorical variables...
+2025-06-01 14:06:02,554 - INFO - Scaling features using standard...
+2025-06-01 14:06:02,592 - INFO - Training random_forest...
+2025-06-01 14:06:02,767 - INFO - 127.0.0.1 - - [01/Jun/2025 14:06:02] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-06-01 14:06:02,900 - INFO - 127.0.0.1 - - [01/Jun/2025 14:06:02] "GET / HTTP/1.1" 200 -
+2025-06-01 14:06:23,256 - INFO - random_forest - Accuracy: 0.8977, CV Score: 0.8961 ± 0.0045
+2025-06-01 14:06:23,257 - INFO - Training logistic_regression...
+2025-06-01 14:06:24,097 - INFO - logistic_regression - Accuracy: 0.8068, CV Score: 0.8064 ± 0.0053
+2025-06-01 14:06:24,098 - INFO - Training naive_bayes...
+2025-06-01 14:06:24,616 - INFO - naive_bayes - Accuracy: 0.4453, CV Score: 0.4389 ± 0.0082
+2025-06-01 14:06:24,617 - INFO - Best model: random_forest with accuracy: 0.8977
+2025-06-01 14:06:24,977 - INFO - Saved files: {'best_model': 'ml_workspace\\Models\\HOtels_6d1ff8c5_random_forest_best.pkl', 'all_models': 'ml_workspace\\Models\\HOtels_6d1ff8c5_all_models.pkl', 'preprocessors': 'ml_workspace\\Preprocessors\\HOtels_6d1ff8c5_preprocessors.pkl', 'results': 'ml_workspace\\Models\\HOtels_6d1ff8c5_results.pkl'}
+2025-06-01 14:06:24,978 - INFO - Pipeline completed successfully!
+2025-06-01 14:06:25,026 - ERROR - Training job b65d40e5-b4d8-4491-a84a-470544e9f943 failed: cannot encode object: dtype('O'), of type: <class 'numpy.dtypes.ObjectDType'>

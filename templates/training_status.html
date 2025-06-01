@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block title %}Training Status{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">Training Status</h1>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <h2 class="text-xl font-semibold mb-4">{{ status.model_name }}</h2>
+        
+        <div class="mb-4">
+            <div class="relative pt-1">
+                <div class="flex mb-2 items-center justify-between">
+                    <div>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-600 bg-indigo-200">
+                            Progress: {{ status.progress }}%
+                        </span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs font-semibold inline-block text-indigo-600">
+                            {{ status.status | capitalize }}
+                        </span>
+                    </div>
+                </div>
+                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
+                    <div style="width:{{ status.progress }}%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-600"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <p class="text-gray-700">{{ status.message }}</p>
+        </div>
+        
+        {% if status.status == 'completed' %}
+        <div class="bg-green-50 p-4 rounded-md mb-4">
+            <h3 class="text-lg font-medium text-green-800 mb-2">Training completed successfully!</h3>
+            {% if status.results %}
+            <p class="text-green-700 mb-1">Best model: {{ status.results.best_model }}</p>
+            <p class="text-green-700 mb-1">Accuracy: {{ "%.2f"|format(status.results.best_accuracy * 100) }}%</p>
+            <p class="text-green-700">Models trained: {{ status.results.models_trained }}</p>
+            {% endif %}
+            <div class="mt-4">
+                <a href="{{ url_for('index') }}" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                    Return to Home
+                </a>
+            </div>
+        </div>
+        {% elif status.status == 'failed' %}
+        <div class="bg-red-50 p-4 rounded-md mb-4">
+            <h3 class="text-lg font-medium text-red-800 mb-2">Training failed</h3>
+            <p class="text-red-700">{{ status.message }}</p>
+            <div class="mt-4">
+                <a href="{{ url_for('index') }}" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                    Return to Home
+                </a>
+            </div>
+        </div>
+        {% else %}
+        <div class="text-center mt-4">
+            <p class="text-gray-500 mb-4">This page will automatically refresh to show progress updates.</p>
+            <a href="{{ url_for('index') }}" class="text-indigo-600 hover:text-indigo-800">Return to Home</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% if status.status != 'completed' and status.status != 'failed' %}
+<script>
+    // Auto-refresh the page every 3 seconds if job is still running
+    setTimeout(function() {
+        location.reload();
+    }, 3000);
+    
+    // Alternatively, use AJAX to update without full page reload
+    /*
+    function updateStatus() {
+        fetch('/api/training_status/{{ job_id }}')
+            .then(response => response.json())
+            .then(data => {
+                // Update progress bar
+                document.querySelector('.overflow-hidden div').style.width = data.progress + '%';
+                
+                // Update status texts
+                document.querySelectorAll('.text-xs.font-semibold')[0].textContent = 'Progress: ' + data.progress + '%';
+                document.querySelectorAll('.text-xs.font-semibold')[1].textContent = 
+                    data.status.charAt(0).toUpperCase() + data.status.slice(1);
+                
+                // Update message
+                document.querySelector('.text-gray-700').textContent = data.message;
+                
+                // If still processing, check again in 3 seconds
+                if (data.status !== 'completed' && data.status !== 'failed') {
+                    setTimeout(updateStatus, 3000);
+                } else {
+                    location.reload(); // Reload once to show final state
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching status:', error);
+                // Try again after 5 seconds if there was an error
+                setTimeout(updateStatus, 5000);
+            });
+    }
+    
+    // Start checking status
+    updateStatus();
+    */
+</script>
+{% endif %}
+{% endblock %}
